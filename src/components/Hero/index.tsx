@@ -1,6 +1,11 @@
 'use client';
 import Link from "next/link";
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import { Autoplay } from 'swiper/modules';
+import { Typewriter } from 'react-simple-typewriter'
 const Hero = () => {
   return (
     <>
@@ -15,19 +20,51 @@ const Hero = () => {
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   Virtual Vendor Smart Solutations
                 </h1>
-                <motion.h3
+                {/* <motion.h3
       tabIndex={0}
-      initial={{ scale: 0 }}
-      animate={{ scale: [1, 1.1, 1] }}
+      initial={{ scale: 10 }}
+      animate={{ scale: [2, 1, 2] }}
       transition={{
-        duration: 4,
+        duration: 8,
         repeat: Infinity,
         ease: 'linear',
       }}
-      className="inline-block rounded-2xl px-6 py-3 mb-8 text-black dark:text-white text-4xl sm:text-4xl md:text-3xl font-serif font-semibold"
+      className="inline-block rounded-2xl px-6 py-3 mb-8 text-black dark:text-white text-2xl sm:text-4xl md:text-3xl font-serif font-semibold"
     >
       Smart Solutions for the Digital Era
-    </motion.h3>
+    </motion.h3> */}
+    <h3
+      tabIndex={0}
+      className="inline-block rounded-2xl px-6 py-3 mb-8 text-black dark:text-white text-2xl sm:text-4xl md:text-3xl font-serif font-semibold"
+    >
+      <Typewriter
+        words={['Smart Solutions for the Digital Era', 'Outstanding support and smart solutions!', 'Future-Ready Tech for Business']}
+        loop={true}
+        cursor
+        cursorStyle="_"
+        typeSpeed={70}
+        deleteSpeed={50}
+        delaySpeed={2000}
+      />
+    </h3>
+    {/* <Swiper
+  modules={[Autoplay]}
+  autoplay={{ delay: 3000, disableOnInteraction: false }}
+  loop={true}
+  spaceBetween={20}
+  slidesPerView={1}
+  className="mb-10 max-w-2xl mx-auto"
+>
+  <SwiperSlide>
+    <p className="text-lg text-gray-700 dark:text-gray-200 italic">“Virtual Vendor transformed our operations. Highly recommend!”</p>
+  </SwiperSlide>
+  <SwiperSlide>
+    <p className="text-lg text-gray-700 dark:text-gray-200 italic">“Outstanding support and smart solutions!”</p>
+  </SwiperSlide>
+  <SwiperSlide>
+    <p className="text-lg text-gray-700 dark:text-gray-200 italic">“A must-have partner for scaling your business.”</p>
+  </SwiperSlide>
+</Swiper> */}
                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   At Virtual Vendor, We empower businesses to stremline thier operations, enhance Customer relationships, and drive growth through smart technology solution
                 </p>
