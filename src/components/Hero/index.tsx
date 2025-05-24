@@ -1,6 +1,6 @@
+'use client';
 import Link from "next/link";
-
-
+import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <>
@@ -15,10 +15,19 @@ const Hero = () => {
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   Virtual Vendor Smart Solutations
                 </h1>
-              <h3 className="inline-block rounded-xl border border-gray-600 bg-gray-800 px-4 py-2 mb-4 text-4xl font-serif font-semibold text-white dark:border-gray-500 dark:text-white sm:text-4xl md:text-3xl animate-fade-in-up">
-  Smart Solutions for the Digital Era
-</h3>
-
+                <motion.h3
+      tabIndex={0}
+      initial={{ scale: 0 }}
+      animate={{ scale: [1, 1.1, 1] }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        ease: 'linear',
+      }}
+      className="inline-block rounded-2xl px-6 py-3 mb-8 text-white text-4xl sm:text-4xl md:text-3xl font-serif font-semibold"
+    >
+      Smart Solutions for the Digital Era
+    </motion.h3>
                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   At Virtual Vendor, We empower businesses to stremline thier operations, enhance Customer relationships, and drive growth through smart technology solution
                 </p>
