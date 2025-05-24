@@ -24,7 +24,7 @@ const Hero = () => {
         repeat: Infinity,
         ease: 'linear',
       }}
-      className="inline-block rounded-2xl px-6 py-3 mb-8 text-white text-4xl sm:text-4xl md:text-3xl font-serif font-semibold"
+      className="inline-block rounded-2xl px-6 py-3 mb-8 text-black dark:text-white text-4xl sm:text-4xl md:text-3xl font-serif font-semibold"
     >
       Smart Solutions for the Digital Era
     </motion.h3>

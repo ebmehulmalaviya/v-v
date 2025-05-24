@@ -53,10 +53,10 @@ const Header = () => {
               <Link
                 href="/"
                 className={`header-logo block w-64 ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  sticky ? "py-5 lg:py-2" : "py-4"
                 } `}
               >
-                <img src="/images/logo/logo.png" alt="Logo"  className="h-24 " />
+                <img src="/images/logo/logo.png" alt="Logo"  className="md:h-24 h-16" />
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
